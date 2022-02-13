@@ -26,7 +26,7 @@ namespace NatsunekoLaboratory.TailwindUSS.Plugins.Embedded
             compiler.AddUtility(".normal", new Dictionary<string, string> { { "-unity-font-style", "normal" } });
             compiler.AddUtility(".italic", new Dictionary<string, string> { { "-unity-font-style", "italic" } });
             compiler.AddUtility(".bold", new Dictionary<string, string> { { "-unity-font-style", "bold" } });
-            compiler.AddUtility(".italic-bold", new Dictionary<string, string> { { "-unity-font-style", "italic-and-bold" } });
+            compiler.AddUtility(".italic-bold", new Dictionary<string, string> { { "-unity-font-style", "bold-and-italic" } });
         }
     }
 }

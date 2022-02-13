@@ -15,7 +15,7 @@ namespace NatsunekoLaboratory.TailwindUSS.Plugins.Embedded
             compiler.AddUtility(".text-left", new Dictionary<string, string> { { "-unity-text-align", "middle-left" } });
             compiler.AddUtility(".text-lower-left", new Dictionary<string, string> { { "-unity-text-align", "lower-left" } });
             compiler.AddUtility(".text-upper-center", new Dictionary<string, string> { { "-unity-text-align", "upper-center" } });
-            compiler.AddUtility(".text-center", new Dictionary<string, string> { { "-unity-text-align", "center" } });
+            compiler.AddUtility(".text-center", new Dictionary<string, string> { { "-unity-text-align", "middle-center" } });
             compiler.AddUtility(".text-lower-center", new Dictionary<string, string> { { "-unity-text-align", "lower-center" } });
             compiler.AddUtility(".text-upper-right", new Dictionary<string, string> { { "-unity-text-align", "upper-right" } });
             compiler.AddUtility(".text-right", new Dictionary<string, string> { { "-unity-text-align", "middle-right" } });

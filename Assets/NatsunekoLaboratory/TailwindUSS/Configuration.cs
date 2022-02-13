@@ -3,15 +3,13 @@
 //  Licensed under the MIT License. See LICENSE in the project root for license information.
 // ------------------------------------------------------------------------------------------
 
-using System;
 using System.Collections.Generic;
 
 using UnityEngine;
 
 namespace NatsunekoLaboratory.TailwindUSS
 {
-    [Serializable]
-    public class Configuration : ScriptableObject
+    public class Configuration
     {
         [SerializeField]
         private Theme _theme;
@@ -863,8 +861,7 @@ namespace NatsunekoLaboratory.TailwindUSS
         }
     }
 
-    [Serializable]
-    public class Theme : ScriptableObject
+    public class Theme
     {
         [SerializeField]
         private Dictionary<string, string> _borderRadius;
