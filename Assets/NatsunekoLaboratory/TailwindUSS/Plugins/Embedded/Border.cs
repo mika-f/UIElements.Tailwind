@@ -14,16 +14,16 @@ namespace NatsunekoLaboratory.TailwindUSS.Plugins.Embedded
             compiler.MatchUtilities((key, value) => new Dictionary<string, Dictionary<string, string>>
             {
                 // inset
-                { $".rounded-{key}", new Dictionary<string, string> { { "border-width", compiler.ToPixel(value) } } },
+                { $".border-{key}", new Dictionary<string, string> { { "border-width", compiler.ToPixel(value) } } },
                 // top
-                { $".rounded-t-{key}", new Dictionary<string, string> { { "border-top-width", compiler.ToPixel(value) } } },
+                { $".border-t-{key}", new Dictionary<string, string> { { "border-top-width", compiler.ToPixel(value) } } },
                 // right
-                { $".rounded-r-{key}", new Dictionary<string, string> { { "border-right-width", compiler.ToPixel(value) } } },
+                { $".border-r-{key}", new Dictionary<string, string> { { "border-right-width", compiler.ToPixel(value) } } },
                 // left
-                { $".rounded-l-{key}", new Dictionary<string, string> { { "border-left-width", compiler.ToPixel(value) } } },
+                { $".border-l-{key}", new Dictionary<string, string> { { "border-left-width", compiler.ToPixel(value) } } },
                 // bottom
-                { $".rounded-b-{key}", new Dictionary<string, string> { { "border-bottom-width", compiler.ToPixel(value) } } }
-            }, configuration.Theme.Padding);
+                { $".border-b-{key}", new Dictionary<string, string> { { "border-bottom-width", compiler.ToPixel(value) } } }
+            }, configuration.Theme.BorderWidth);
         }
     }
 }
